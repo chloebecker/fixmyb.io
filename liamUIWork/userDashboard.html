@@ -13,9 +13,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<!-- Google Web Fonts -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 <!-- My stylesheet(s) -->
 
-<link rel="stylesheet" href="./userDashboard.css">
+<link rel="stylesheet" href="./userDashboard_2.css">
 
 </head>
 
@@ -36,8 +40,9 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
         <ul class="nav navbar-nav">
-            <li><a href="./HomeORDashboard">Dashboard</a></li>
-            <li><a href="./profile">Profile</a></li>
+            <li><a href="./HomeORDashboard" style="font-size:18px; color:#ffffff">Dashboard</a></li>
+            <li><a href="./profile" style="font-size:18px; color:#ffffff">Profile</a></li>
+            <li><a href="./topProfiles" style="font-size:18px; color:#ffffff">Top</a></li>
         </ul>
 
         <div class="col-sm-3 col-md-3 pull-right">
@@ -51,30 +56,29 @@
         </form>
         </div>
 
+        <div id="notificationTab" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!-- Query Notifications -->
+          <p>Notifications go here.</p>
+        </div>
+        <div id="main" class="pull-right">
+          <span style="font-size:14px;cursor:pointer" onclick="openNav()"><i class="material-icons">notifications</i></span>
+        </div>
+
+        <script>
+        function openNav() {
+            document.getElementById("notificationTab").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("notificationTab").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
     </div>
 </div>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
-  <!-- Query Notifications -->
-</div>
-
-<div id="main">
-  <h4>Sidenav</h4>
-  <span style="font-size:14px;cursor:pointer" onclick="openNav()">&#2407; Notifications</span>
-</div>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 
 
 </body>

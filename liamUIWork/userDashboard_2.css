@@ -9,7 +9,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #222222;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -36,20 +36,24 @@ body {
     margin-left: 50px;
     color: #ffffff
 }
+.sidenav p {
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.navnavbar-nav a {
+  font-size: 18px;
+  color: #ffffff;
+}
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
 
-p {
-  color: #ffffff;
-  font-size: 18px;
-}
 .material-icons{
-
-  color: white;
-
+  color: #ffffff;
 }
 
 @media screen and (max-height: 450px) {
