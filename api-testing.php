@@ -5,10 +5,10 @@ require_once('TwitterAPIExchange.php');
  
 #Set access tokens here
 $settings = array(
-    'oauth_access_token' => "792463225463853061-P5ZDTgnzgkroQtYu3QkPR5wn9GSmfLA",
-    'oauth_access_token_secret' => "HQVGmAORW0RTZFDdg0CSWuRShQ7THCJnsAh0mPnOKNR6O",
-    'consumer_key' => "o7QBNAyTr2odzOdGSIrBENTEY",
-    'consumer_secret' => "uqafomtqM8XZTxt8gC7Sr7lmZfJIHjqnTUvJp4yVv74f7PwfQw"
+    'oauth_access_token' => "-",
+    'oauth_access_token_secret' => "-",
+    'consumer_key' => "-",
+    'consumer_secret' => "-"
 );
 
 $url = "https://api.twitter.com/1.1/users/lookup.json";
