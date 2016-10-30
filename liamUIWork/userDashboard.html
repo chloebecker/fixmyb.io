@@ -7,15 +7,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap -->
+<!-- Materialize -->
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-- Google Web Fonts -->
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- My stylesheet(s) -->
 
@@ -26,59 +31,50 @@
 
 <body>
 
-  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-    </div>
+<nav>
+<div class="nav-wrapper">
+  <a href="#!" class="brand-logo center"><i class="material-icons">content_paste</i>Fix My Bio</a>
+  <ul class="right hide-on-med-and-down">
+<!-- Write search function? -->
+    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <li><a href="#"><i class="material-icons">dashboard</i></a></li>
+    <li><a href="./topProf"><i class="material-icons">whatshot</i></a></li>
+    <li><a href="./profile"><i class="material-icons">face</i></a></li>
+    <li><a href="./message"><i class="material-icons">chat</i></a></li>
 
-        <ul class="nav navbar-nav">
-            <li><a href="./HomeORDashboard" style="font-size:18px; color:#ffffff">Dashboard</a></li>
-            <li><a href="./profile" style="font-size:18px; color:#ffffff">Profile</a></li>
-            <li><a href="./topProfiles" style="font-size:18px; color:#ffffff">Top</a></li>
-        </ul>
+    <!-- Create notification popup -->
 
-        <div class="col-sm-3 col-md-3 pull-right">
-        <form class="navbar-form" role="search">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-            <div class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-        </div>
-        </form>
-        </div>
+    <script>
+      $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      }
+    );
+    </script>
 
-        <div id="notificationTab" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <!-- Query Notifications -->
-          <p>Notifications go here.</p>
-        </div>
-        <div id="main" class="pull-right">
-          <span style="font-size:14px;cursor:pointer" onclick="openNav()"><i class="material-icons">notifications</i></span>
-        </div>
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons">notifications</i></a>
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li><a href="#!">three</a></li>
+    </ul>
 
-        <script>
-        function openNav() {
-            document.getElementById("notificationTab").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("notificationTab").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-
-    </div>
+  </ul>
 </div>
+</nav>
 
 
 </body>
